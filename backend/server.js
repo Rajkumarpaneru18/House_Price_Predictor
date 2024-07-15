@@ -52,27 +52,38 @@ app.post("/predict", async (req, res) => {
 
     console.log("Response from MindsDB:", response.data);
 
-    if (response.data && response.data.data && response.data.data.length > 0) {
-      const predictedPrice = response.data.data[0].Price;
-      res.json({ Price: predictedPrice });
+    if (response.data && response.data.length > 0) {
+      let predictedPrice = response.data[0].Price.toString(); // Convert to string
+
+      // Convert back to number to format with commas
+      predictedPrice = Number(predictedPrice);
+
+      // Check if predictedPrice is a valid number
+      if (!isNaN(predictedPrice)) {
+        // Format predictedPrice with commas every three digits
+        predictedPrice = predictedPrice.toLocaleString("en");
+      } else {
+        predictedPrice = ""; // Handle case where predictedPrice is not a valid number
+      }
+
+      res.json({ Price: `Predicted price of house: NPR ${predictedPrice}` });
     } else {
       throw new Error("Empty or unexpected response format");
     }
   } catch (error) {
     console.error("Error:", error.message);
     if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
+      // Handle specific error responses
       console.error("Response Data:", error.response.data);
       console.error("Response Status:", error.response.status);
       console.error("Response Headers:", error.response.headers);
       res.status(error.response.status).json({ error: error.response.data });
     } else if (error.request) {
-      // The request was made but no response was received
+      // Handle no response received
       console.error("Request Data:", error.request);
       res.status(500).json({ error: "No response from MindsDB server" });
     } else {
-      // Something happened in setting up the request that triggered an Error
+      // Handle other errors
       console.error("Error Message:", error.message);
       res.status(500).json({ error: "Internal Server Error" });
     }
