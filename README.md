@@ -1,5 +1,5 @@
-<div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
-    <img src="https://drive.google.com/uc?id=1tQwVploNUkpFiYao_U3RJv7gjeWz6KyJ" style="max-width: 100%; max-height: 100%;" />
+<div style="width: 50%; height: 25vh; display: flex; justify-content: center; align-items: center;">
+    <img src="https://drive.google.com/uc?id=1tQwVploNUkpFiYao_U3RJv7gjeWz6KyJ" style="max-width: 25%; max-height: 25%;" />
 </div>
 
 
@@ -38,24 +38,19 @@
   <span style="font-size: 16px;">This project utilizes React for the frontend and Axios for API requests to MindsDB for machine learning predictions.</span><br>
 </p>
 
-
-## Solution
-The House Price Predictor project aims to address these issues by providing a user-friendly web application that leverages machine learning to predict house prices based on various input parameters. By integrating with MindsDB, the application offers accurate and reliable predictions, thus enhancing the decision-making process for buyers, sellers, and real estate agents in Nepal.
 ## Table of Contents
 
-- [Problem Statement ](#problem_statement)
+- [Problem Statement ](#problem-statement)
 - [Solution](#solution)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Problem Statement
-Nepal is experiencing rapid urbanization, resulting in significant fluctuations in the real estate market. The lack of reliable data and predictive tools makes it difficult for potential buyers, sellers, and real estate agents to make informed decisions regarding property prices. This creates uncertainty and can lead to either overpricing or underpricing of properties, making the real estate market inefficient and often inaccessible to average citizens.
-
+As Nepal undergoes rapid urbanization, the real estate market faces considerable volatility. Potential buyers, sellers, and agents lack access to reliable data and predictive tools to determine accurate property prices. This uncertainty fosters an environment where brokers may exploit the lack of transparency to negotiate higher commissions, potentially leading to deception and financial losses for stakeholders. Consequently, the real estate market becomes inefficient and inaccessible to average citizens, hindering informed decision-making and contributing to market inefficiencies.
 ## Solution
 The House Price Predictor project aims to address these issues by providing a user-friendly web application that leverages machine learning to predict house prices based on various input parameters. By integrating with MindsDB, the application offers accurate and reliable predictions, thus enhancing the decision-making process for buyers, sellers, and real estate agents in Nepal.
 
@@ -66,7 +61,7 @@ The House Price Predictor project aims to address these issues by providing a us
 - Integration with MindsDB API
 
 ## Demo
-
+https://github.com/user-attachments/assets/a4a0849d-c8e8-4ac4-b73c-3d6ebf9326b0
 ### Installation
 
 For the installation guide, you can  check it out here  [INSTALLATION.md](./INSTALLATION.md).
@@ -81,3 +76,5 @@ For the installation guide, you can  check it out here  [INSTALLATION.md](./INST
 
 We welcome contributions to enhance and improve [House_Price_Predictor]()! Feel free to submit issues, feature requests, or pull requests. Please adhere to our Code of Conduct.
 
+## License
+This project is licensed under the [MIT License](/LICENSE).
