@@ -1,5 +1,5 @@
 import React from "react";
-import house from "../../assets/house.jpg";
+import house from "../assets/house.jpg";
 import { Link } from "react-router-dom";
 import NavBar from "./Navbar";
 const Header = () => {
