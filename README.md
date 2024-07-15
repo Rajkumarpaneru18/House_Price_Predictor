@@ -1,6 +1,9 @@
-<p align="center">
-    <img src="/home/rajkumar/Desktop/Projects/Nepal_Trekking_Route_Recommend_System/web_app/src/assets/logo.png" style="height: 50%; width: 50%;" />
-</p>
+<div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <img src="https://drive.google.com/uc?id=1tQwVploNUkpFiYao_U3RJv7gjeWz6KyJ" style="max-width: 100%; max-height: 100%;" />
+</div>
+
+
+    
 
 <p align="center">
     <a href="https://github.com/Rajkumarpaneru18/House_Price_Predictor/watchers" target="_blank">
@@ -63,7 +66,6 @@ The House Price Predictor project aims to address these issues by providing a us
 - Integration with MindsDB API
 
 ## Demo
-[Watch Demo](https://github.com/SusheelThapa/Quine-ZeroSpoil/assets/83917129/a0a1f16e-fb04-4430-bcdc-e72ab966c4b6)
 
 ### Installation
 
