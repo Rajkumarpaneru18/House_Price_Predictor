@@ -209,7 +209,7 @@ const PropertiesForm = () => {
             onClick={handleTryAgain}
             className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 mt-4"
           >
-            Try Again
+            Predict Another
           </button>
         </div>
       )}
